@@ -1,0 +1,12 @@
+<table class="todo-table" *ngIf="todos$" cellspacing="0" cellpadding="0">
+    <tr class="todo-row" *ngFor="let todo of todos$ | async; let i=index;">
+        <td class="todo-number">{{i + 1}}</td>
+        <td class="todo-description">{{todo.title}}</td>
+        <td class="todo-status">
+            <div class="slide-box">
+                <input type="checkbox" class="slide-box__checkbox" id="slideBox{{i}}" [(checked)]="todo.completed">
+                <label for="slideBox{{i}}"></label>
+            </div>
+        </td>
+    </tr>
+</table>

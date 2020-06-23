@@ -1,0 +1,50 @@
+:host() {
+    display: block;
+    padding-bottom: 30px;
+}
+
+.albums-table {
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border: 1px solid gray;
+    overflow: hidden;
+}
+
+.table-header {
+    background-color:#1d1b1b;
+    color: white;
+}
+
+.album-numeration, .album-info {
+    padding: 10px;
+}
+
+.album-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album-photos {
+    margin-left: 20px;
+    padding: 5px;
+    background-color: #1d1b1b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.album-photos:hover {
+    background-color: #1d1b1bc4;
+}
+
+.album:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.album-numeration {
+    font-weight: bold;
+}

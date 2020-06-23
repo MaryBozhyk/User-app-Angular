@@ -1,0 +1,32 @@
+:host {
+    display: block;
+}
+
+table {
+    width: 500px;
+    margin: 0 auto 30px;
+}
+
+.table-name {
+    color: white;
+    padding-bottom: 30px;
+}
+
+.comment {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border: 1px solid gray;
+}
+
+.comment-option:nth-child(even) {
+    background-color: lightgray;
+}
+
+.comment-header, .comment-body {
+    padding: 10px;
+}
+
+.comment-header {
+    font-weight: bold;
+}

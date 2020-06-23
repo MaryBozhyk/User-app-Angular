@@ -1,0 +1,26 @@
+<table *ngIf = "(user$ | async) as user" class="user-details" cellspacing="0" cellpadding="0">
+    <tr class="user-option">
+        <td class="user-title">name:</td>
+        <td class="user-data">{{user.name}}</td>
+    </tr>
+    <tr class="user-option">
+        <td class="user-title">email:</td>
+        <td class="user-data">{{user.email}}</td>
+    </tr>
+    <tr class="user-option">
+        <td class="user-title">address:</td>
+        <td class="user-data">{{user.address.street}}, {{ user.address.suite}}, {{ user.address.city}}, {{ user.address.zipcode}}</td>
+    </tr>
+    <tr class="user-option">
+        <td class="user-title">phone:</td>
+        <td class="user-data">{{user.phone}}</td>
+    </tr>
+    <tr class="user-option">
+        <td class="user-title">website:</td>
+        <td class="user-data">{{user.website}}</td>
+    </tr>
+    <tr class="user-option">
+        <td class="user-title">company:</td>
+        <td class="user-data">{{user.company.name}}</td>
+    </tr>
+</table>

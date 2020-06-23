@@ -1,0 +1,21 @@
+.user-details {
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border: 1px solid gray;
+    overflow: hidden;
+}
+
+.user-title {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.user-data {
+    padding: 10px
+}
+
+.user-option:nth-child(odd) {
+    background-color: lightgray;
+}

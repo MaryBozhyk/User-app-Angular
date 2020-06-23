@@ -1,0 +1,8 @@
+<h1 class="users-page-title">Wellcome!</h1>
+<p class="users-choosing">Please, choose a user:</p>
+<div class="users-list">
+    <div class="user-block" *ngFor="let user of users$ | async" [routerLink] = "['/user', user.id]">
+        <img src="../../assets/user_icon.png" alt="User" class="user-img">
+        <p class="user-name">{{user.username}}</p>
+    </div>
+</div>

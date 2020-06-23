@@ -1,0 +1,13 @@
+<table *ngIf = "albums$" class="albums-table" cellspacing="0" cellpadding="0">
+    <tr class="table-header">
+        <th class="album-numeration">№</th>
+        <th class="album-info">Name</th>
+    </tr>
+    <tr *ngFor="let album of albums$ | async; let i=index;" class="album">
+        <td class="album-numeration">{{i + 1}}</td>
+        <td class="album-info">
+            <p class="album-name">{{album.title}}</p>
+            <button class="album-photos" [routerLink]="['./photos', {albumId: album.id}]">View photos</button>
+        </td>
+    </tr>
+</table>

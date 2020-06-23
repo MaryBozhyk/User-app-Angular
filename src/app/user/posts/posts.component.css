@@ -1,0 +1,31 @@
+:host() {
+    display: block;
+    padding: 20px 40px 40px;
+}
+.user-post {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border: 1px solid gray;
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.post-title {
+    text-align: center;
+}
+
+.post-comments {
+    margin: 10px auto;
+    padding: 5px;
+    background-color: #1d1b1b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+}
+
+.post-comments:hover {
+    background-color: #1d1b1bc4;
+}

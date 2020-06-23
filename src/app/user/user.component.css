@@ -1,0 +1,52 @@
+:host {
+    display: block;
+    background-color: gray;
+    background: linear-gradient(180deg, rgba(0,0,5,1) 0%, rgba(69,69,71,1) 53%, rgba(240,242,242,1) 100%);
+    min-height: 100vh;
+}
+
+.user-navigation {
+    background-color: black;
+    height: 60px;
+    box-shadow: 0px 3px 10px 0px rgba(66,65,66,1);;
+    display: flex;
+    justify-content: center;
+}
+
+.user-button {
+    width: 20%;
+    max-width: 200px;
+    border: none;
+    border-right: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.user-button:last-child {
+    border: none;
+}
+
+.active {
+    background-color: #1d1b1b;
+}
+
+.user-button:hover {
+    background-color: #80808080;
+}
+
+.user-name {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.return-previous {
+    width: 60px;
+}

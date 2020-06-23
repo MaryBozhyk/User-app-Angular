@@ -1,0 +1,5 @@
+<article class="user-post" *ngFor="let post of posts$ | async">
+    <h3 class="post-title">{{post.title}}</h3>
+    <p class="post-body">{{post.body}}</p>
+    <button class="post-comments" [routerLink]="['./comments', {postId: post.id, postName: post.title}]">Comments</button>
+</article>

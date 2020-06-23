@@ -1,0 +1,29 @@
+:host() {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photos-container {
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border: 1px solid gray;
+    overflow: hidden;
+    margin: 30px;
+}
+
+.photo-title {
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+}

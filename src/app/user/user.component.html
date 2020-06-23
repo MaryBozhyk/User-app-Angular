@@ -1,0 +1,10 @@
+<nav class="user-navigation">
+    <button class="return-previous user-button" backButton><img src="../../assets/arrow.png" alt="Back"></button>
+    <button class="user-details user-button" routerLink = "./"  [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">Details</button>
+    <button class="user-albums user-button" routerLink = "./albums"  routerLinkActive="active">Albums</button>
+    <button class="user-posts user-button" routerLink = "./posts" routerLinkActive="active">Posts</button>
+    <button class="user-todos user-button" routerLink = "./todos"  routerLinkActive="active">Todos</button>
+    <button class="return-button  user-button" routerLink = "/users" routerLinkActive="active">Home</button>
+</nav>
+<h1 class="user-name">{{userName}}</h1>
+<router-outlet></router-outlet>

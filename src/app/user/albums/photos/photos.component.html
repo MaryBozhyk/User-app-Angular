@@ -1,0 +1,6 @@
+<section class="photos-container" *ngFor="let photo of photos$ | async">
+    <article class="photo-block">
+        <h1 class="photo-title">{{photo.title}}</h1>
+        <img class="photo" [src]="photo.url" alt="photo">
+    </article>
+</section>

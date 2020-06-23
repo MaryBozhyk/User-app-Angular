@@ -1,0 +1,17 @@
+<table *ngFor="let comment of comments$ | async; let i=index" cellspacing="0" cellpadding="0">
+    <caption class="table-name" *ngIf="i === 0">{{postName | uppercase}}</caption>
+    <tbody class="comment">
+        <tr class="comment-option">
+            <td class="comment-header">name:</td>
+            <td class="comment-body">{{comment.name}}</td>
+        </tr>
+        <tr class="comment-option">
+            <td class="comment-header">email:</td>
+            <td class="comment-body">{{comment.email}}</td>
+        </tr>
+        <tr class="comment-option">
+            <td class="comment-header">body:</td>
+            <td class="comment-body">{{comment.body}}</td>
+        </tr>
+    </tbody>
+</table>
